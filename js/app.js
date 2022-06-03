@@ -3,6 +3,9 @@ let board;
 let turn;
 let winner;
 // 2) Store cached element references
+
+const restBtn = document.querySelector("#rest-button")
+
 const squareEls = document.querySelectorAll(".square");
 const messageEl = document.querySelector("#message");
 // 3) Upon loading, the game state should be initialized, and a function should be called to render this game state
