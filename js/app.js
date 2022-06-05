@@ -40,7 +40,7 @@ function render() {
             squareEls[index].textContent = " ";
         }
     });
-    
+
     // message if there is a winner
     if (winner === null) {
         messageEl.textContent = `it is ${turn === 1 ? "O's" : "X's"} turn!`  // ${javscript } template literal
@@ -48,7 +48,7 @@ function render() {
     } else if (winner === 0) {
         messageEl.textContent = `it is a tie`
     } else {
-        messageEl.textContent = `the winner is ${winner === -1 ?"x" : "o"}`
+        messageEl.textContent = `the winner is ${winner === -1 ? "x" : "o"}`
     }
 }
 
@@ -98,7 +98,7 @@ function handleClick(event) {
 gameBoard.addEventListener('click', handleClick)
 
 // 8) Create Reset functionality
-restBtn.addEventListener('click',init)
+restBtn.addEventListener('click', init)
 
 
 init()
